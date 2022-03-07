@@ -1,0 +1,50 @@
+
+
+
+.linktree-board{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-around;
+    gap:1em;
+    margin:5em auto 5em auto;
+    width:480px;
+    padding:2em;
+    //background: rgba(19, 19, 19, 0.3);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.linkt-button{
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: var(--h3grigio);
+    background-color: var(--bianco);
+    border: 3px solid var(--azzurro);
+    cursor: pointer;
+    position: relative;
+    width:400px;
+    text-decoration: none;
+    text-align:center;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+    border-radius:10px;
+    transition: all .3s;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.linkt-button:hover{
+    background-color: var(--azzurro);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.linkt-button:active{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+}

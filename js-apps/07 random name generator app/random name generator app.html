@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Random Name Generator</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <link rel="stylesheet" href="/header-footer-style.css" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="style.css" />
+        
+        <script src="/header-navbar.js" type="module"></script>
+        <script src="/footer-navbar.js" type="module"></script>
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    </head>
+    <body> 
+
+        <!-- Navigation bar header JS -->
+        <header id="headernavbar">
+                <p>nabbar</p>
+        </header>
+
+        <main>    
+            <div class="rboard">
+                <h1>Random Name Generator</h1>
+                <br>
+                <div class="menu">
+                    <div class="options">
+                    <label for="points">Length: </label><label for="points" id="numberlabel"></label>
+                    <input type="range" id="points" name="points" min="3" max="9" value="5">
+                    </div>
+                    <div class="options">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Vowels</label>
+                    </div>
+                </div>
+                <br>
+                <div class="panel">
+                    <blockquote id="quote">Name-name-name</blockquote>
+                </div>
+                <br>
+                <div class="panel">
+                    <button onclick="copyname()"><i class="fa-regular fa-copy"></i></button>
+                    
+                    <button onclick="generatename(points.value)"><i class="fa-solid fa-arrow-rotate-left"></i></button>
+                </div>
+            </div>
+
+        </main>
+        <!--footer JS-->
+        <footer id="footernavbar">
+            <p>footnabbar</p>
+        </footer>    
+    </body>
+</html>
