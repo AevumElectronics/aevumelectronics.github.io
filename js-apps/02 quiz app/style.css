@@ -21,10 +21,11 @@ main {
     display: flex;
     flex-wrap: wrap;
     margin:auto;
-    justify-content:center;
+    justify-content:flex-start;
     
 }
 #quiz-header{
+    padding-left:1em;
     padding-bottom:1em;
 }
 button{
