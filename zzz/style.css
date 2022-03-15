@@ -58,7 +58,7 @@ body{
 .fullpanel-card-small{
     display:flex;
     flex-direction: row;
-    width:80%;
+    width:70%;
     margin:2em auto 2em auto;
     justify-content:space-between;
     align-items:center;
@@ -86,12 +86,12 @@ body{
 .fullpanel{
     display:flex;
     flex-direction: row;
-    width:80%;
+    width:70%;
     margin:auto;
     justify-content:space-between;
     margin-top: 3em;
     margin-bottom: 3em;
-    row-gap: 2em;
+    row-gap: 1em;
     //column-gap:5em;
     //justify-items:stretch;
 }
@@ -126,7 +126,7 @@ body{
 
 
 hr{
-    border:solid 1px var(--azzurro);
+    border:solid 2px var(--azzurro);
     width:80%;
     margin:auto;
     border-radius:2em;

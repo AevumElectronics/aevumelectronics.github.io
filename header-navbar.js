@@ -14,15 +14,20 @@ function headerf() {
 
                 <div class="headermenu">
                     <div>
+                        <a href="/index.html">HOME</a>
+                    </div>
+                    <div>
                         <a href="/javascript-apps.html">JAVASCRIPT</a>
                     </div>
                     <div>
                         <a href="/html-snippets.html">HTML</a>
                     </div>
-                    <div>
-                        <a href="/products.html">PRODUCTS</a>
-                    </div>
+                    
                 </div>
             </div>
             `;
 }
+
+//<div>
+//<a href="/products.html">PRODUCTS</a>
+//</div>

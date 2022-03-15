@@ -9,7 +9,7 @@ function footerf() {
         <div class="footer-menu">
                 <h5>SiteMap</h5>
                 <div class=""><a href="/index.html"><i></i>Home</a></div>
-                <div class=""><a href="/products.html"><i></i>Products</a></div>
+                
                 <div class=""><a href="/javascript-apps.html"><i></i>Javascript</a></div>
                 <div class=""><a href="/html-snippets.html"><i></i>HTML</a></div>
                 <div class=""><a href="/linktree.html"><i></i>LinkTree</a></div>
@@ -30,3 +30,6 @@ function footerf() {
     
     `;
 }
+
+
+//<div class=""><a href="/products.html"><i></i>Products</a></div>
