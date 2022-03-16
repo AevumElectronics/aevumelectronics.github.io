@@ -22,7 +22,7 @@
 
 
 body{
-    font-family: serif;
+    font-family: "Times New Roman", Times, serif;
     background-color:var(--bianco);
     justify-content:center;
 }
@@ -136,7 +136,7 @@ a {
 }
 p{
     color:var(--txtgrigio);
-    font-size:1.5em;
+    //font-size:1.5em;
 }
 h1{
     text-align:center;

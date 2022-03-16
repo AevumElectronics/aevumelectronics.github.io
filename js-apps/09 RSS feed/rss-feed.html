@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>RSS Feed</title>
+        
+        <link rel="stylesheet" href="rss-feed-style.css" />
+        <link rel="stylesheet" href="/style.css" />
+        
+        <link rel="stylesheet" href="/header-footer-style.css" />
+        <script src="/header-navbar.js" type="module"></script>
+        <script src="/footer-navbar.js" type="module"></script>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+        <script src="rss-feed.js" type="module"></script>
+        
+        
+        
+    </head>
+    <body>
+        <!--Navigation bar header JS-->
+        <header id="headernavbar">
+            <p>nabbar</p>
+        </header>
+        
+        <main>
+            <div class="rss-strip-container">
+                <div class="title-block">
+                    <h3 class="">RSS Feed Tutorial</h3>
+                    <h4>Easy and Custom RSS Feed<br> Using Daily.dev Shareable bookmarks</h4>
+                    
+                    <br>
+                    <h5>What is an RSS?</h5>
+                    <p>RSS stands for Really Simple Syndication, and it’s is a simple, 
+                        standardized content distribution method that can help you stay up-to-date 
+                        with your favorite articles, blogs, websites, and social media channels. 
+                        Instead of visiting sites to find new posts or subscribing to sites to 
+                        receive notification of new posts, 
+                        find the RSS feed on a website and read new posts in an RSS reader. </p>
+                    <br>
+                    <h5>Let's build a personalized RSS feed for our website.</h5>
+                    <p>
+                        In tutorial i want to show some basic functionalities so 
+                        that we can build a personalized RSS feed in our website using the daily.dev API 
+                    </p>
+                </div>
+                <div class="feed-opened">
+                        <div class="random-feed">
+                            <h5 style="color:#fbfbfb; text-align: center; font-weight:200;">Random Feed</h5>
+                            <br>
+                            <p id="random-f">xxx</p>
+                        </div>
+                        <div id="feed-textarea" class="recent-feed">
+                            <h5 style="text-align: center;">Recent Feeds<p id="date">date</p></h5>
+                            <br>
+                            <ul></ul>
+                        </div>
+                </div>
+            </div>
+            <div class="text-container">
+                <h5>What do we need to start?</h5>
+                <p>
+                    To start this project we need 3 external components:<br>
+                    Feednami client, the shareable bookmarks url and a huge cup of coffee.
+                    The feednami client is a simple tool to fetch RSS feeds while
+                    the shareable bookmarks are a collection of all our favorite posts saved on daily.dev platform.
+                </p>
+                <br>
+                <h5>Project</h5>
+                <p>
+                    The project is divided in 2 blocks: <br>
+                    A random feed element and a recent feeds element.<br>
+                    The first thing we need to is to create some variables:<br>
+                    
+                </p>
+                <div class="code-dark">
+                    <code>
+                        let url = 'https://api.daily.dev/rss/b/5288401e-fc3b-4a14-bc78-55aa1c44a724';<br>
+                        const textarea = document.querySelector('#feed-textarea > ul');<br>
+                        const randomf = document.getElementById('random-f')<br>
+                    </code>
+                </div>
+                <p>
+                    The first variable is our shareable bookmarks url.<br>
+                    Inside the daily.dev platform we click the share button and 
+                    we simply copy & paste the link for our favorites.<br>
+                    The other two variables are for the feeds, the random feed 
+                    is a single element while the recent feeds are in the form of a list.<br>
+                </p>
+                <div class="code-dark">
+                    <code>
+                        feednami.load(url)<br>
+                        &nbsp;&nbsp;.then(feed => {<br>
+                            &nbsp;&nbsp;&nbsp;        *** Our Functions *** <br>
+                        });<br>
+                    </code>
+                </div>
+                <p>
+                    
+                    Using the feednami client we fetch the .XML 
+                    file with all our feeds and then we build our function with all the features that we want.<br>
+                </p>
+
+
+                <br>
+                <h5>Random Feed Element</h5>
+                <p>
+                    Before starting we need to think what we want to show.<br>
+                    The element is clickable so we need a link.<br>
+                    Does the link needs some text inside? <br>
+                    Let's say that we want to use the title of the RSS as text.<br>
+                    The last thing we need is an address.<br>
+                    The entire RSS feed is a list so we need an index for the element.<br>
+                </p>
+                    
+                <p>
+                    The complete list is inside the object <span class="ital">feed</span>. <br>
+                    The console will show us whats inside the file and how that particular feed is structured.<br>
+                </p>
+                <div class="code-dark">
+                    <code>
+                        console.log(feed);
+                        
+                    </code>
+                </div>
+                <p> 
+                    Using the console is helpful if we don't know clearly where things are.<br>
+                    All the feeds are inside <span class="ital">entries</span> so using <span class="ital">feed.entries</span>
+                     we can show all the single elements of the list.<br>
+                     <span class="ital">feed.entries.length</span> will show us the length of the list.<br>
+                     <span class="ital">feed.entries[N]</span> will show us the N-th element of the list 
+                    and from that we can extrapolate the link and 
+                    the title of the RSS using <span class="ital">feed.entries[N].link</span> and <span class="ital">feed.entries[N].title</span>.
+                </p>
+
+                <div class="code-dark">
+                    <code>
+                        console.log(feed.entries.length);<br>
+                        console.log(feed.entries[N]);<br>
+                        console.log(feed.entries[N].title);<br>
+                        console.log(feed.entries[N].link);<br>
+                        
+                    </code>
+                </div>
+
+                <p>
+                    To generate a random feed element we have all the 
+                    informations we need and the only thing missing is random number for the address.<br>
+                </p>
+
+                <div class="code-dark">
+                    <code>
+                        var randomnumber = Math.floor(Math.random() * feed.entries.length)<br>
+                    </code>
+                </div>
+
+                <p>
+                    <span class="ital">Math.random()</span> generate a random number between 0 and 1.<br>
+                    <span class="ital">(Math.random() * feed.entries.length)</span> <br>
+                    When you multiply the length of the list for a number between 0 and 1 you get a number between 0 and the length itself.<br>
+                    <span class="ital">Math.floor()</span> round the number so that we have an integer we can use as an address for the RSS feed array.<br>
+                </p>
+                <br>
+                <p>
+                    At the beginning of the project we linked the variable
+                    <span class="ital">randomf</span> with an element in the page with the <span class="ital">ID=random-f</span>.<br>
+                    Using <span class="ital">innerHTML</span> we bring an anchor tag inside this element.<br>
+                </p>
+                <div class="code-dark">
+                    <code>
+                        randomf.innerHTML = <br>
+                        `&lt;a href="${feed.entries[randomnumber].link}"><br>
+                            &nbsp;    ${feed.entries[randomnumber].title}<br>
+                            &lt;/a>`;<br>
+
+                    </code>
+                </div>
+                <p>
+                    This anchor has a link and a text.<br>
+                    The variable <span class="ital">randomnumber</span> is the N we calculated before to use as an address.<br>
+                    The link is in <span class="ital">feed.entries[randomnumber].link</span>.<br>
+                    We want to use the title of the feed as text so <span class="ital">feed.entries[randomnumber].title</span>.<br>
+                </p><br>
+                
+
+
+
+                <h5>Recent Feeds</h5>
+                <p>
+                    The recent feed element is a list of all our RSS.<br>
+                    To create a list we scan the entire array and for every
+                     element we create an <span class="ital">&lt;li></span> block.<br>
+                    We fill this block and then we use <span class="ital">appendchild() </span>
+                    to add this node to the end of the list.<br>
+                </p>
+
+
+
+                <div class="code-dark">
+                    <code>
+                        for(let entry of feed.entries){<br>
+                            &nbsp;    let li = document.createElement('li');<br>
+                            &nbsp;    li.innerHTML = `&lt;a href="${entry.link}">${entry.title}&lt;/a>`;<br>
+                            &nbsp;    textarea.appendChild(li);<br>
+                        }<br>
+                    </code>
+                </div>
+
+                <p>
+                    <span class="ital">for(let entry of feed.entries){}</span><br>
+                    It's a simple "for" loop that scan the entire array.<br>
+                    <span class="ital">let entry</span> set up the variable so, instead of creating an index
+                    "i" and using <span class="ital">feed.entries[i]</span> for the path, we can simply use <span class="ital">entry</span>.<br>
+                </p><br>
+
+                <p>
+                    <span class="ital">let li = document.createElement('li');</span><br>
+                    Create the new <span class="ital">&lt;li></span> element of the list.<br>
+                </p><br>
+                <p>
+                    <span class="ital">li.innerHTML = `&lt;a href="${entry.link}">${entry.title}&lt;/a>`;</span><br>
+                    <span class="ital">innerHTML</span> puts an anchor inside the list element.<br>
+                    This anchor has the <span class="ital">entry.link</span> address and the <span class="ital">entry.title</span> text.<br>
+                </p><br>
+                <p>
+                    <span class="ital">textarea.appendChild(li);</span><br>
+                    Lastly we append the new element of the list 
+                    before restarting the loop for the next feed element.<br>
+                </p><br>
+
+                
+
+
+
+            </div>
+            <div class="text-container">
+                <p>
+                    DISCLAIMER:<br>
+                     The "for" loop ends at the end of the list so if you have a 
+                        lot of bookmarked feeds you will have an almost infinite amount of elements.<br>
+                    if you want to show up only a finite number of feed you better build a a loop with 
+                    an index using <span class="ital">feed.entries[i]</span> as path so that you will control the size of the list.<br>
+                </p><br>
+            </div>
+            <div class="text-container"><br><p><br></p><br></div>
+
+
+
+        </main>
+
+        <!--footer JS-->
+        <footer id="footernavbar">
+            <p>footnabbar</p>
+        </footer>
+    </body>
+</html>
