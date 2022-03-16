@@ -205,7 +205,21 @@ label{
 .button:hover::before {
     transform: translateX(0);
 }
-
+.button2{
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    color: var(--txtgrigio);
+    border: 1px solid var(--txtgrigio);
+    cursor: pointer;
+    transition: all .3s;
+    border-radius:5px;
+    background-color: var(--bianco);
+}
+.button2:hover{
+    box-shadow: 0 0px 3px var(--azzurro-alpha);
+    border: 1px solid var(--azzurro);
+    color: var(--azzurro);
+}
 
 .card-container{
     display: flex;
