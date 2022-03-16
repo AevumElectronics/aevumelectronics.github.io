@@ -35,6 +35,7 @@ body{
     justify-content:space-around;
     //gap:3em;
     margin:5em auto 5em auto;
+    
     width:80%;
     padding:2em;
     border-radius: 16px;
@@ -117,7 +118,7 @@ body{
 }
 
 .half .logoimg{
-    display: block;
+    display: flex;
     object-fit: scale-down;
     max-width:400px;
     padding:2em;
@@ -282,8 +283,16 @@ label{
 }
 
 @media only screen and (max-width: 800px) {
-    .board{flex-direction: column;} 
+    .board{flex-direction: column;
+    width:90%;
+    } 
     .fullpanel{flex-direction: column;}
     .fullpanel-small{width:90%;}
     .fullpanel-card-small{width:90%; flex-direction: column;}
+    .half .logoimg{
+        //width:70%;
+        max-width:350px;
+        //padding:2em;
+        margin:2em;
+    }
 }

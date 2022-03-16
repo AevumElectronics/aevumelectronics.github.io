@@ -26,7 +26,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    gap:2em;
+    gap:1em;
 }
 .headermenu a{
     color:var(--grigioscuro);
@@ -61,4 +61,10 @@
 .footerpannello2 p{
     font-size:16px;
     
+}
+
+
+
+@media only screen and (max-width: 800px){
+    .headermenu{gap:0.5em;}
 }
