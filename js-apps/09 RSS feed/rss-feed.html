@@ -207,24 +207,43 @@
                     </code>
                 </div>
 
+                <hr>
+                <div class="code-dark">
+                    <code>
+                        for(let entry of feed.entries){}
+                    </code>
+                </div>
                 <p>
-                    <span class="ital">for(let entry of feed.entries){}</span><br>
                     It's a simple "for" loop that scan the entire array.<br>
                     <span class="ital">let entry</span> set up the variable so, instead of creating an index
                     "i" and using <span class="ital">feed.entries[i]</span> for the path, we can simply use <span class="ital">entry</span>.<br>
                 </p><br>
 
+                <div class="code-dark">
+                    <code>
+                        let li = document.createElement('li');
+                    </code>
+                </div>
                 <p>
-                    <span class="ital">let li = document.createElement('li');</span><br>
                     Create the new <span class="ital">&lt;li></span> element of the list.<br>
                 </p><br>
+                <div class="code-dark">
+                    <code>
+                        li.innerHTML = `&lt;a href="${entry.link}">${entry.title}&lt;/a>`;
+                    </code>
+                </div>
                 <p>
-                    <span class="ital">li.innerHTML = `&lt;a href="${entry.link}">${entry.title}&lt;/a>`;</span><br>
+                    
                     <span class="ital">innerHTML</span> puts an anchor inside the list element.<br>
                     This anchor has the <span class="ital">entry.link</span> address and the <span class="ital">entry.title</span> text.<br>
                 </p><br>
+                <div class="code-dark">
+                    <code>
+                        textarea.appendChild(li);
+                    </code>
+                </div>
                 <p>
-                    <span class="ital">textarea.appendChild(li);</span><br>
+                    
                     Lastly we append the new element of the list 
                     before restarting the loop for the next feed element.<br>
                 </p><br>
