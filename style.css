@@ -1,8 +1,8 @@
 *{
     box-sizing: border-box;
     text-decoration: none;
-    margin:0;
-    padding:0;
+    margin:0px;
+    padding:0px;
     
     //border:solid 1px red;
 }
@@ -26,11 +26,14 @@ body{
     font-family: "Times New Roman", Times, serif;
     background-color:var(--bianco);
     justify-content:center;
+    margin:0px;
+    padding:0px;
     //width:100%;
     //overflow-x: hidden;
 }
-main, header, footer{
-    //width:100%;
+body, main, header, footer{
+    max-width:100%;
+    //overflow-x: hidden;
 }
 
 .board{
@@ -41,6 +44,7 @@ main, header, footer{
     //gap:3em;
     margin:5em auto 5em auto;
     //overflow:hidden;
+    max-width:1000px;
     width:80%;
     padding:2em;
     border-radius: 16px;
@@ -64,6 +68,7 @@ main, header, footer{
 .fullpanel-card-small{
     display:flex;
     flex-direction: row;
+    max-width:1000px;
     width:80%;
     margin:2em auto 2em auto;
     justify-content:space-between;
@@ -125,15 +130,17 @@ main, header, footer{
 .half .logoimg{
     display: flex;
     object-fit: scale-down;
+    width:90%;
     max-width:400px;
-    padding:2em;
-    margin:2em;
+    //padding:2em;
+    margin:auto;
 }
 
 
 hr{
     border:solid 1px var(--azzurro);
     width:80%;
+    max-width:1000px;
     margin:auto;
     border-radius:2em;
 }
@@ -289,15 +296,22 @@ label{
 
 @media only screen and (max-width: 800px) {
     .board{flex-direction: column;
-    width:90%;
+        width:90%;
     } 
     .fullpanel{flex-direction: column;}
     .fullpanel-small{width:90%;}
     .fullpanel-card-small{width:90%; flex-direction: column;}
     .half .logoimg{
-        //width:70%;
         max-width:350px;
         //padding:2em;
-        margin:2em;
+        margin:auto;
     }
+}
+
+@media only screen and (max-device-width: 380px) and (min-device-width: 331px)
+html, html body, body #wrapper {
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    overflow-x: hidden;
 }
