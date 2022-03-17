@@ -3,6 +3,7 @@
     text-decoration: none;
     margin:0;
     padding:0;
+    
     //border:solid 1px red;
 }
 :root {
@@ -25,8 +26,12 @@ body{
     font-family: "Times New Roman", Times, serif;
     background-color:var(--bianco);
     justify-content:center;
+    //width:100%;
+    //overflow-x: hidden;
 }
-
+main, header, footer{
+    //width:100%;
+}
 
 .board{
     display:flex;
@@ -35,7 +40,7 @@ body{
     justify-content:space-around;
     //gap:3em;
     margin:5em auto 5em auto;
-    
+    //overflow:hidden;
     width:80%;
     padding:2em;
     border-radius: 16px;

@@ -8,13 +8,12 @@ main {
 }
 
 .frame-box{
-    background: #fbfbfd;
-    opacity: 0.9;
-    margin:auto;
+    margin:2em auto 2em auto;
     border-radius: 1.2em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: hidden;
-    width:60%;
+    max-width:700px;
+    width:90%;
     padding:0;
 }
 .quiz-container {
@@ -25,8 +24,9 @@ main {
     
 }
 #quiz-header{
-    padding-left:1em;
-    padding-bottom:1em;
+    padding:1em;
+    //padding-left:1em;
+    //padding-bottom:1em;
 }
 button{
     width:100%;

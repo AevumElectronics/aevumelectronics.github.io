@@ -1,22 +1,22 @@
 
 main{
-    display:flex;
-    font-family: serif;
-    height:100vh;
+    //display:flex;
+    //font-family: serif;
+    //height:100vh;
     //background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-    justify-content:center;
-    margin:0;
+    //justify-content:center;
+    //margin:;
 }
 
 .rboard{
-    background:white;
-    opacity:0.8;
-    align-item:center;
-    margin:auto;
+    
+    //align-items:center;
+    margin:2em auto 2em auto;
     border-radius:2em;
     box-shadow:rgba(0, 0, 0, 0.45) 0px 5px 15px;
     padding:2em;
-    width:80%;
+    width:90%;
+    max-width:500px;
 
 }
 .menu{
@@ -86,3 +86,9 @@ input[type=checkbox]{
     height:1.3em;
     cursor: pointer;
 }
+@media only screen and (max-width: 800px) {
+    blockquote{
+        font-size:2em;
+        margin: auto;
+}
+    } 

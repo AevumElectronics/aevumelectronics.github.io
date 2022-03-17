@@ -1,33 +1,25 @@
 
-main{
-    display:flex;
-    font-family: serif;
-    height:100vh;
-    justify-content:center;
-    margin:0;
-}
+
 
 .clockboard{
-    background:white;
-    opacity:0.8;
-    //width:60%;
-    align-item:center;
-    margin:auto;
+    width:90%;
+    max-width:700px;
+    margin:2em auto 2em auto;
     border-radius:2em;
     box-shadow:rgba(0, 0, 0, 0.45) 0px 5px 15px;
     padding:2em;
-    //height:50vh;
 
 }
 .clockboards{
     display: flex;
     flex-wrap:wrap;
     //flex-direction: column;
-    margin:1em 0;
+    margin:auto;
 }
 
 .clockoblocko{
-    margin:0 2em;
+    margin:auto;
+    padding:1em;
     align-items: center;
     text-align:center;
     //border:0;

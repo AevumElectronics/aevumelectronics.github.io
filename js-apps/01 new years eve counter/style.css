@@ -1,20 +1,9 @@
 
-main {
-    font-family: serif;
-    margin: 0;
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    //background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
-
-}
 
 .big-text{
     line-height:1;
     font-size: 6rem;
-    margin: 1rem 2rem;
+    //margin: 1em 2em;
 }
 .countdown-container {
     display: flex;
@@ -27,16 +16,16 @@ main {
 }
 
 .countdown-box{
-    background: #fbfbfd;
-    opacity: 0.8;
-    margin:auto;
+    width:90%;
+    max-width:1000px;
+    margin:4em auto 15em auto;
     padding:2rem;
     border-radius: 2em;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .days-c, .hours-c, .minutes-c, .seconds-c{
-    width:300px;
+    width:200px;
 }
 
 h1{
@@ -46,4 +35,10 @@ h1{
 }
 span{
     font-size:2rem;
+}
+
+@media only screen and (max-width: 800px) {
+    .days-c, .hours-c, .minutes-c, .seconds-c{
+        width:300px;
+    }
 }
