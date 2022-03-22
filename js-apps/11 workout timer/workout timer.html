@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Workout Timer App</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <link rel="stylesheet" href="/header-footer-style.css" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="style.css" />
+        
+        <script src="/header-navbar.js" type="module"></script>
+        <script src="/footer-navbar.js" type="module"></script>
+        <script src="script.js" defer></script>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    </head>
+    <body> 
+
+        <!-- Navigation bar header JS -->
+        <header id="headernavbar">
+                <p>nabbar</p>
+        </header>
+        <main>  
+            <div class="grey-strip">
+                <h1 style="color: var(--bianco);">Workout Timer App</h1>
+                <p>It's time for Cardio!</p>
+                <p>Select the length of your workout and press start.</p>
+                <p>The counter will do 3 repetitions with equal time for both the exercises and the rests.</p>
+            </div>
+
+            <div class="wboard" id="wboard">
+                
+                
+                <div class="wcard">
+                    <div class="wpanel">
+                        <div>
+                            <h5>Rep</h5>
+                            <p id="rep">0</p>
+                        </div>
+                        <div>
+                            <h5 id="gorest">GO/REST</h5>
+                        </div>
+                        <div>
+                            <input type="number" id="numberup" step="5" required 
+                            name="go-time" min="5" max="500" value="30" placeholder="30"/>
+                        </div>
+                        <!--<div>
+                            <input type="range" id="numberup" name="points" min="5" max="300" value="30">
+                            <h5 id="">REST</h5>
+                            <input type="number" id="numberdown" name="rest-time" min="5" max="120" value="30" placeholder="30"/>
+                        </div>-->
+                    </div>
+                    <progress id="task" min="0" max="100" value="0"></progress>
+                    <h2 class="bignumber" id="timer">0</h2>
+                    
+                    
+                    <button id="play-stop-button" onclick=toggle()>Play</button>
+                    
+
+                   
+                    
+                    
+
+                </div>
+            </div>
+        </main>
+        <!--footer JS-->
+        <footer id="footernavbar">
+            <p>footnabbar</p>
+        </footer>
+    </body>
+</html>

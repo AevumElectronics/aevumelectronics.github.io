@@ -1,0 +1,154 @@
+
+
+
+.wboard{
+    width:90%;
+    max-width:500px;
+    margin: 2em auto 4em auto;
+    border-radius:2em;
+    box-shadow:rgba(0, 0, 0, 0.45) 0px 5px 15px;
+    overflow:hidden;
+    //padding:2em;
+}
+.wcard{
+    text-align: center;
+    margin:auto;
+}
+.wmenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    //gap:5em;
+    //margin:1em 0em;
+    //padding:0 6em;
+}
+.wpanel{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap:2em;
+    align-items:center;
+    padding-left:2em;
+    padding-right:2em;
+    padding-top:0.8em;
+    padding-bottom:0.5em;
+    margin: auto;
+}
+.wpanel>div{
+    flex:1;
+}
+.bignumber{
+    font-size:6em;
+    overflow:hidden;
+    //padding:2em;
+}
+hr{
+    border:solid 1px var(--azzurro);
+    width:100%;
+}
+h1{
+    text-align:center;
+    font-size:3.5em;
+    margin: 0;
+}
+h2{
+    font-size:3em;
+    margin: 0;
+}
+h3{
+    font-size:2.5em;
+    margin: 0;
+}
+h4{
+    font-size:2em;
+    margin: 0;
+}
+h5{
+    //font-size:1.2em;
+    margin: 0;
+}
+label{
+    font-size: 1.5em; 
+}
+button{
+    background-image: radial-gradient(100% 100% at 100% 0, var(--grafitechiaro) 0, var(--grafite) 100%);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: var(--bianco);
+    cursor: pointer;
+    flex-shrink: 0;
+    font-size: 2em;    
+    font-weight: 500;
+    opacity:0.8;
+    padding: 1em 1em;
+    text-align: center;
+    width:100%;
+}
+button:hover {
+    opacity:0.5;
+    transition: 0.6s;
+}
+
+button:active {
+    opacity:1;
+    transition: 0.4s;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.4);
+}
+
+progress{
+    decoration:none;
+    border:none;
+    opacity:0.8;
+    //border-radius: 7px; 
+    width: 100%;
+    height: 2em;
+    //box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+    
+}
+progress[value]{
+    background-color: var(--bianco);
+    //border-radius: 7px;
+    //box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+  }
+  progress::-webkit-progress-bar {
+    background-color: var(--bianco);
+    //border-radius: 7px;
+  }
+  progress::-webkit-progress-value {
+    background-color: var(--grafitechiaro);
+    //border-radius: 7px;
+    //box-shadow: 1px 1px 5px 3px rgba( 255, 0, 0, 0.8 );
+  }
+  progress::-moz-progress-bar {
+    background-color: var(--grafitechiaro);
+    //border-radius: 7px;
+    //box-shadow: 1px 1px 5px 3px rgba( 255, 0, 0, 0.8 );
+  }
+.rosso{
+    box-shadow: 0 5px 15px 0 rgba(255,0,0,1);
+}
+.verde{
+    box-shadow: 0 5px 15px 0 rgba(0,255,0,1);
+}
+input[type="number"] {
+    display:flex;
+    width:4em;
+    font-size:1.5em;
+    font-weight:300;
+    border:none;
+    justify-content:center;
+    align-self: center;
+    padding-left:10px;
+    text-align:center;
+ }
+
+ @media only screen and (max-width: 800px) {
+    .wpanel{
+        gap:1em;
+        padding-left:1em;
+        padding-right:1em;
+        padding-top:0.8em;
+        padding-bottom:0.5em;
+    }
+ }
