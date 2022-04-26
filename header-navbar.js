@@ -16,12 +16,7 @@ function headerf() {
                     <div>
                         <a href="/index.html">HOME</a>
                     </div>
-                    <div>
-                        <a href="/javascript-apps.html">JAVASCRIPT</a>
-                    </div>
-                    <div>
-                        <a href="/html-snippets.html">HTML</a>
-                    </div>
+                    
                     <div>
                         <a href="/linktree.html">LINKTREE</a>
                     </div>
