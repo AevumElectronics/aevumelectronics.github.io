@@ -1,7 +1,9 @@
 a{
     color:var(--txtgrigio);
 }
-
+a:active{
+    color:var(--txtgrigio);
+}
 
 .linktree-board{
     display:flex;
