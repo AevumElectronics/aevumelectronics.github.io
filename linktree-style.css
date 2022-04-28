@@ -1,4 +1,6 @@
-
+a{
+    color:var(--txtgrigio);
+}
 
 
 .linktree-board{
@@ -27,7 +29,7 @@
     font-weight: 400;
     color: var(--h3grigio);
     background-color: var(--bianco);
-    border: 1px solid var(--azzurro-alpha);
+    border: 1px solid var(--txtgrigio);
     cursor: pointer;
     position: relative;
     width:95%;
