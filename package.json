@@ -1,7 +1,7 @@
 {
   "name": "page-gallery",
   "version": "0.1.0",
-  "homepage": "https://aevumelectronics.github.io/React-Test-Website/",
+  "homepage": "https://aevumelectronics.github.io/",
   "private": true,
   "dependencies": {
     "@heroicons/react": "^1.0.6",
