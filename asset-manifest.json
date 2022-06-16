@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.6521b3af.css",
-    "main.js": "/static/js/main.baef33fe.js",
+    "main.css": "/static/css/main.884aa8f6.css",
+    "main.js": "/static/js/main.360c41f7.js",
     "static/media/logo-aevum-sm.webp": "/static/media/logo-aevum-sm.1789439db6a339f8ec49.webp",
     "static/media/icon-aevum-solo-text-250px.webp": "/static/media/icon-aevum-solo-text-250px.6cada817be295ba8fb7b.webp",
     "static/media/icon-aevum-solo-logo-shadow-250px.webp": "/static/media/icon-aevum-solo-logo-shadow-250px.8caa47f3c057bbff3a41.webp",
     "static/media/cart1.webp": "/static/media/cart1.7da41c9b15db1bfb4317.webp",
     "static/media/trello1.webp": "/static/media/trello1.6e5da8babea633f8aced.webp",
     "index.html": "/index.html",
-    "main.6521b3af.css.map": "/static/css/main.6521b3af.css.map",
-    "main.baef33fe.js.map": "/static/js/main.baef33fe.js.map"
+    "main.884aa8f6.css.map": "/static/css/main.884aa8f6.css.map",
+    "main.360c41f7.js.map": "/static/js/main.360c41f7.js.map"
   },
   "entrypoints": [
-    "static/css/main.6521b3af.css",
-    "static/js/main.baef33fe.js"
+    "static/css/main.884aa8f6.css",
+    "static/js/main.360c41f7.js"
   ]
 }
