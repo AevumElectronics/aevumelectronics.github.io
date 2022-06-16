@@ -472,11 +472,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-h-56 {
   max-height: 14rem;
 }
+.max-h-\[480px\] {
+  max-height: 480px;
+}
 .min-h-screen {
   min-height: 100vh;
 }
 .w-\[90\%\] {
   width: 90%;
+}
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .w-\[70\%\] {
   width: 70%;

@@ -10,11 +10,7 @@ const projectdata= [
         title:"Fake Store V1",
         description:"Test for React Redux with the use of the Fake Store API",
         url:"https://aesthetic-faun-b5da85.netlify.app/",
-        img:[
-            require("../img/e-com1.webp"),
-            require("../img/e-com2.webp"),
-            require("../img/e-com3.webp"),
-        ],
+        img:[require("../img/cart1.webp")],
     },
     
 ]

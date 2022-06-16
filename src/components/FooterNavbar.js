@@ -11,7 +11,7 @@ function FooterNavbar() {
       <div className='flex flex-row justify-evenly'>
           <div className='justify-start flex flex-col gap-2'>
           
-            <h5 className='text-3xl font-semibold'>Projects</h5>
+            <h3 className='text-3xl font-semibold'>Projects</h3>
             <hr></hr>
             {data.map((data)=>(data.type==="project" &&
             <div key={data.title}>
@@ -21,13 +21,13 @@ function FooterNavbar() {
             
           </div>
           <div className='justify-start flex flex-col gap-2'>
-            <h5 className='text-3xl font-semibold'>SiteMap</h5>
+            <h3 className='text-3xl font-semibold'>SiteMap</h3>
             <hr></hr>
             <Link to="/" className="cursor-pointer hover:text-red-500">Home</Link>
             <Link to="/linktree" className="cursor-pointer hover:text-red-500">LinkTree</Link>
           </div>
           <div className='justify-start flex flex-col gap-2'>
-            <h5 className='text-3xl font-semibold'>Social</h5>
+            <h3 className='text-3xl font-semibold'>Social</h3>
             <hr></hr>
             {data.map((data)=>(data.type==="social" &&
             <div key={data.title}>

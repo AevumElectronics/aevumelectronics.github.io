@@ -14,7 +14,7 @@ export default function ProjectCard(props) {
                 target="_blank" rel="noopener noreferrer">
                 <div className='md:max-w-md'>
                     <img src={image[0]} alt={props.title} 
-                        className="h-[300px]  object-contain"/>
+                        className="max-h-[480px] w-fit object-contain"/>
                 </div>
                 <div className="flex-1 text-center text-zinc-700 p-5">
                     <h1 className='text-5xl font-bold text-center mb-5'>{props.title}</h1>

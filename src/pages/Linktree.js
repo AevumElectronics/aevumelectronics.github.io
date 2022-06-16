@@ -10,13 +10,14 @@ function Linktree() {
             
             
             {data.map((data)=>(
-                <div className="rounded-sm shadow-md p-2 text-center text-lg bg-red-400 cursor-pointer
+                <a className="rounded-sm shadow-md p-2 text-center text-lg bg-red-400 cursor-pointer
                 transition-all 
                 hover:bg-red-500 hover:rounded-sm hover:shadow-xl
                 active:bg-red-300 active:rounded-sm active:shadow-lg"
-                key={data.title}>
-                    <a href={data.url}>{data.title}</a>
-                </div>)
+                key={data.title}
+                href={data.url}>
+                {data.title}
+                </a>)
             )}
 
 
