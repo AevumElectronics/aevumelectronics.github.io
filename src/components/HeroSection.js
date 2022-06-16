@@ -10,7 +10,7 @@ export default function HeroSection() {
             ">
         
             <div className="flex-1">
-                <img src={require("../img/logo-aevum-sm.webp")} alt="logo" className="max-h-56 w-fit object-contain"/>
+                <img src={require("../img/logo-aevum-sm.webp")} alt="logo" className="h-[250px] w-[500px] object-contain"/>
             </div>
             <div className="flex-1 text-center text-zinc-700">
                 <h1 className='text-5xl font-bold text-center mb-5'>Ciao</h1>

@@ -12,9 +12,9 @@ export default function ProjectCard(props) {
              ">
             <a href={props.url} className="cursor-pointer flex items-center flex-col md:flex-row" 
                 target="_blank" rel="noopener noreferrer">
-                <div className='md:max-w-md'>
+                <div className=''>
                     <img src={image[0]} alt={props.title} 
-                        className="max-h-[480px] w-fit object-contain"/>
+                        className="xl:w-[512px] xl:h-[384px] md:object-contain w-[400px] h-[300px] object-cover object-left"/>
                 </div>
                 <div className="flex-1 text-center text-zinc-700 p-5">
                     <h1 className='text-5xl font-bold text-center mb-5'>{props.title}</h1>

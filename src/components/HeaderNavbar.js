@@ -9,8 +9,8 @@ function HeaderNavbar() {
         <div className='justify-start '>
             <div>
                 <Link to="/" className="my-auto flex flex-row">
-                    <img src={require("../img/icon-aevum-solo-logo-shadow-250px.webp")}  className="max-h-10" alt="logo"/>
-                    <img src={require("../img/icon-aevum-solo-text-250px.webp")} className="max-h-10 hidden md:block" alt="logo with text"/>
+                    <img src={require("../img/icon-aevum-solo-logo-shadow-250px.webp")}  className="h-10 w-10" alt="logo"/>
+                    <img src={require("../img/icon-aevum-solo-text-250px.webp")} className="h-10 w-60 hidden md:block" alt="logo with text"/>
                 </Link>
             </div>
         </div>

@@ -457,6 +457,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-12 {
   height: 3rem;
 }
+.h-10 {
+  height: 2.5rem;
+}
+.h-\[250px\] {
+  height: 250px;
+}
 .h-\[20vh\] {
   height: 20vh;
 }
@@ -466,14 +472,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-\[300px\] {
   height: 300px;
 }
-.max-h-10 {
-  max-height: 2.5rem;
-}
 .max-h-56 {
   max-height: 14rem;
-}
-.max-h-\[480px\] {
-  max-height: 480px;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -481,15 +481,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-\[90\%\] {
   width: 90%;
 }
-.w-fit {
-  width: -moz-fit-content;
-  width: fit-content;
+.w-10 {
+  width: 2.5rem;
+}
+.w-60 {
+  width: 15rem;
+}
+.w-\[500px\] {
+  width: 500px;
 }
 .w-\[70\%\] {
   width: 70%;
 }
-.w-10 {
-  width: 2.5rem;
+.w-\[400px\] {
+  width: 400px;
 }
 .w-\[95\%\] {
   width: 95%;
@@ -644,6 +649,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .object-contain {
   object-fit: contain;
+}
+.object-cover {
+  object-fit: cover;
+}
+.object-left {
+  object-position: left;
 }
 .p-5 {
   padding: 1.25rem;
@@ -837,6 +848,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:object-contain {
+    object-fit: contain;
+  }
+}
+@media (min-width: 1280px) {
+
+  .xl\:h-\[384px\] {
+    height: 384px;
+  }
+
+  .xl\:w-\[512px\] {
+    width: 512px;
   }
 }
 
